@@ -26,9 +26,34 @@
 			font:normal 14px/23px 'Tahoma';
 			
 			float:left;
+			
+			transition:0.3s;
+			-moz-transition:0.3s; /*Firefox 4*/
+			-webkit-transition:0.3s; /*Safari and Chrome*/
+			-o-transition:0.3s; /*Opera*/
 		}
+		
 		content a {
 			color:#61ad3c;
+		}
+		
+		content:hover {
+			padding-left:50px;
+		}
+		
+		content::selection {
+			background:#61ad3c;
+			color:white;
+		}
+
+		content::-moz-selection {
+			background:#61ad3c;
+			color:white;
+		}
+
+		content::-webkit-selection {
+			background:#61ad3c;
+			color:white;
 		}
 	</style>
 </head>
